@@ -31,9 +31,7 @@ class MainWindow(QMainWindow):
 
     def create_golden_record(self):
         if MainWindow.flag:
-            successBox = QMessageBox()
-            successBox.setText("Какая-то обработка...")
-            successBox.exec()
+            self.manipulate()
         else:
             alertBox = QMessageBox()
             alertBox.setText("Не выбран csv файл для обработки!")
